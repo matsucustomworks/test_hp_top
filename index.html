@@ -3,56 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ホンダGB250の紹介</title>
+    <title>Honda Motor Lineup</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- ヘッダー -->
     <header>
-        <img src="gb250-image.jpg" alt="Honda GB250" id="header-image">
-        <h1>ホンダGB250</h1>
+        <div class="logo">
+            <img src="honda-logo.png" alt="Honda Logo">
+        </div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#models">Models</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- ナビゲーションメニュー -->
-    <nav id="navbar">
-        <ul>
-            <li><a href="#about">自己紹介</a></li>
-            <li><a href="#gb250">GB250紹介</a></li>
-            <li><a href="#custom">カスタム内容</a></li>
-            <li><a href="#gallery">ギャラリー</a></li>
-        </ul>
-    </nav>
+    <!-- メインビジュアル（Heroセクション） -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hondaのバイクラインアップ</h1>
+            <p>最新のバイクモデルと技術の革新を体験しよう。</p>
+        </div>
+    </section>
 
-    <!-- メインコンテンツ -->
-    <main>
-        <section id="about">
-            <h2>自己紹介</h2>
-            <p>ここに自己紹介文を入力してください。</p>
-        </section>
-
-        <section id="gb250">
-            <h2>私のGB250紹介</h2>
-            <p>ホンダGB250は、1980年代に発売されたバイクで、レトロでクラシックなデザインが特徴です。</p>
-        </section>
-
-        <section id="custom">
-            <h2>カスタム内容</h2>
-            <p>GB250に施したカスタム内容を紹介します。例: ハンドルバー変更、タンクのペイントなど。</p>
-        </section>
-
-        <section id="gallery">
-            <h2>ギャラリー</h2>
-            <div class="gallery">
-                <img src="gallery-image1.jpg" alt="GB250 Image 1">
-                <img src="gallery-image2.jpg" alt="GB250 Image 2">
-                <img src="gallery-image3.jpg" alt="GB250 Image 3">
+    <!-- モデル紹介セクション -->
+    <section id="models">
+        <h2>モデルラインアップ</h2>
+        <div class="model-cards">
+            <div class="model-card">
+                <img src="bike1.jpg" alt="Model 1">
+                <h3>モデル1</h3>
+                <p>新しいモデルの紹介文。</p>
             </div>
-        </section>
-    </main>
+            <div class="model-card">
+                <img src="bike2.jpg" alt="Model 2">
+                <h3>モデル2</h3>
+                <p>新しいモデルの紹介文。</p>
+            </div>
+            <div class="model-card">
+                <img src="bike3.jpg" alt="Model 3">
+                <h3>モデル3</h3>
+                <p>新しいモデルの紹介文。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 特長セクション -->
+    <section id="features">
+        <h2>ホンダの特長</h2>
+        <div class="feature-items">
+            <div class="feature-item">
+                <h3>革新的な技術</h3>
+                <p>ホンダは常に先進的な技術を取り入れた製品を提供しています。</p>
+            </div>
+            <div class="feature-item">
+                <h3>優れたデザイン</h3>
+                <p>美しいデザインが魅力的なホンダのバイク。</p>
+            </div>
+            <div class="feature-item">
+                <h3>安全性能</h3>
+                <p>乗る人を守るために、安全性を追求したバイク。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ギャラリーセクション -->
+    <section id="gallery">
+        <h2>ギャラリー</h2>
+        <div class="gallery">
+            <img src="gallery-image1.jpg" alt="Gallery Image 1">
+            <img src="gallery-image2.jpg" alt="Gallery Image 2">
+            <img src="gallery-image3.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
 
     <!-- フッター -->
     <footer>
-        <p>&copy; 2025 ホンダGB250紹介</p>
+        <p>&copy; 2025 Honda Motor Co., Ltd. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
