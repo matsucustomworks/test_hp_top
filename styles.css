@@ -1,108 +1,90 @@
-/* 全体のスタイル */
+/* 全体の背景とフォント設定 */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #2e2e2e; /* ダークグレー */
-    color: #eaeaea; /* ライトグレー */
 }
 
-/* ヘッダーのスタイル */
+/* ヘッダーの設定 */
 header {
-    background-color: #1b3b1b; /* ミリタリーグリーン */
-    color: #eaeaea;
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 20px;
 }
 
-header .logo img {
-    width: 100px;
-    margin-bottom: 10px;
+#header-image {
+    max-width: 100%;
+    height: auto;
 }
 
-header h1 {
+/* ナビゲーションメニューの設定 */
+#navbar {
+    background-color: #444;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style-type: none;
     margin: 0;
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style: none;
     padding: 0;
-    margin: 10px 0 0;
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
-    margin: 0 15px;
+#navbar ul li {
+    padding: 15px;
 }
 
-nav ul li a {
-    color: #eaeaea;
+#navbar ul li a {
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+#navbar ul li a:hover {
+    color: #ddd;
 }
 
-/* ヒーローセクション */
-#hero {
-    background-color: #3e4e3e; /* ダークカーキ */
-    padding: 30px 20px;
-    text-align: center;
-}
-
-#hero h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #ffd700; /* ゴールド */
-}
-
-#hero p {
-    font-size: 1.2rem;
-}
-
-/* 部品セクション */
-#parts {
+/* メインコンテンツのセクション設定 */
+main {
     padding: 20px;
-    background-color: #2e2e2e;
 }
 
-.parts-container {
+h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* ギャラリーの設定 */
+.gallery {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
-.part {
-    background-color: #1b3b1b;
-    border: 1px solid #444;
-    border-radius: 5px;
-    padding: 10px;
-    width: 30%;
-    text-align: center;
-}
-
-.part img {
-    width: 100%;
+.gallery img {
+    width: 300px;
     height: auto;
-    border-radius: 5px;
+    border: 5px solid #333;
 }
 
-.part h4 {
-    margin: 10px 0;
-    color: #ffd700;
-}
-
-/* フッター */
+/* フッターの設定 */
 footer {
-    background-color: #1b3b1b;
-    color: #eaeaea;
+    background-color: #333;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* スクロールの際にナビゲーションメニューに動き */
+.navbar-active {
+    background-color: #222;
 }
